@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Portofolio</title>
+
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
+  
+        :root{
+          --primary-color: #0C0D0F;
+          --dark-color: #0B292E;
+          --light-color: #CAC8AC;
+          --h1-font-size:40px;
+          --h2-font-size:32px;
+        }
+  
+        *{
+          margin: 0;
+          padding: 0;
+          font-family: 'Parkinsans', sans-serif;
+        }
+  
+        section{
+          padding: 18em 0;
+        }
+  
+        section .section-title {
+          font-size: var(--h2-font-size);
+          text-transform: uppercase;
+        }
+  
+        .btn-black{
+          background-color: var(--primary-color);
+          color: white;
+        }
+
+        .btn-lgreen{
+            background-color: var(--light-color);
+        }
+
+        .btn-lgreen:hover{
+            background-color: var(--primary-color);
+            color: var(--light-color);
+        }
+  
+        .text-black{
+            color: var(--primary-color);
+        }
+
+        .navbar {
+            background-color: var(--dark-color);
+        }
+  
+        .navbar .nav-item .nav-link:hover,
+        .navbar .nav-item .nav-link:active{
+          color: var(--light-color);
+        }
+
+        span{
+            color: var(--light-color);
+        }
+
+        .header-section{
+            background-color: var(--dark-color);
+        }
+
+        .header-section .header-title{
+            font-size: var(--h1-font-size);
+        }
+
+        .section-title{
+            font-size: var(--h2-font-size);
+        }
+
+        .about-section{
+            background-color: var(--primary-color);
+        }
+
+        .about-section p{
+            text-align: justify;
+        }
+
+        .about-section img{
+            filter: drop-shadow(-2px 0px 13px #3e4144);
+        }
+
+        .experience-section{
+            background-color: var(--dark-color);
+            padding: 14em 0;
+        }
+
+        .experience-section .card .card-img-top{
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .contact-section{
+            background-color: var(--primary-color);
+        }
+
+        .contact-section a{
+            text-decoration: none;
+            color: white;
+        }
+
+        .contact-section a:hover{
+            color: var(--light-color);
+        }
+        
+        .contact-section a:active{
+            color: white;
+        }
+        
+        footer{
+            background-color: var(--primary-color);
+        }
+      </style>
+</head>
+
+
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="#">Imelda <span>S.</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#header">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#experience">Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <!-- header -->
+    <section class="header-section" id="header">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-6">
+                    <p class="text-white fw-semibold">Hi, I'm Imelda Sunario</p>
+                    <h1 class="header-title text-white text-uppercase fw-bold mb-3">I'm a <span id="typing"></span></h1>
+                    <p class="text-white fw-semibold">At Pelita Harapan University</p>
+                </div>
+
+                <div class="col-md-5">
+                    <img src="img/profil.jpeg" alt="Imelda" width="400" class="img-fluid rounded-circle">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-5">
+                    <img src="img/avatar.png" alt="Imelda" width="400" class="img-fluid rounded-circle">
+                </div>
+
+                <div class="col-md-6">
+                    <h2 class="section-title text-white mb-5">About Me</h2>
+                    <p class="text-white">I'm Imelda. I'm a Systems Information student at the University of Sumatera Utara. While I may not have professional experience in design, I am passionate about learning and developing my skills in this field. To further enhance my design abilities, I have joined the Communication Media and Information student organization.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- experience -->
+    <section class="experience-section" id="experience">
+        <div class="container">
+            <h2 class="section-title text-white mb-5">Experience</h2>
+            
+            <div class="row row-cols-1 row-cols-md-4 g-4 justify-content-center">
+                <div class="col">
+                  <div class="card text-black h-100">
+                    <img src="img/project1.jpg" class="card-img-top" alt="project-1" />
+                    <div class="card-body">
+                      <h5 class="card-title">Liveliness & Jollity</h5>
+                      <p class="card-text">I was a committee member for a Service Learning project called "Liveliness & Jollity". I had the opportunity to visit the 'Dewi Karunia' orphanage on December 2, 2023. Our goal was to bring joy and support to the children, and to provide educational activities.</p>
+                      <a href="#" class="btn btn-black">Detail</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card text-black h-100">
+                    <img src="img/project2.jpg" class="card-img-top" alt="project-2" />
+                    <div class="card-body">
+                      <h5 class="card-title">The Correlation Between Pancasila and the Rights and Obligations of Indonesian Citizens</h5>
+                      <p class="card-text">I served on a committee for a Service Learning activity, presenting on "The Correlation Between Pancasila and Citizen Rights and Obligations" at State Elementary School 060871 on July 25, 2024.</p>
+                      <a href="#" class="btn btn-black">Detail</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card text-black h-100">
+                    <img src="img/project3.jpg" class="card-img-top" alt="project-3" />
+                    <div class="card-body">
+                      <h5 class="card-title">Education on How to Develop Virtue Ethics in Daily Life for Elementary School Students</h5>
+                      <p class="card-text">I participated as a committee member in the Service Learning activity to educate students at State Elementary School 060871 on "How to Develop Virtue Ethics in Daily Life," which was held on October 21, 2024.</p>
+                      <a href="#" class="btn btn-black">Detail</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card text-black h-100">
+                    <img src="img/project4.jpg" class="card-img-top" alt="project-4" />
+                    <div class="card-body">
+                      <h5 class="card-title">International Conference on Technology Innovation and Its Applications</h5>
+                      <p class="card-text">As a design committee member, I was responsible for designing the acrylic posters, standing posters, and banners for the International Conference on Technology Innovation and Its Applications held on September 12, 2024.</p>
+                      <a href="#" class="btn btn-black">Detail</a>
+                    </div>
+                  </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- contact -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title text-white mb-5">Contact</h2>
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-6">
+                    <p class="text-secondary mb-3">
+                        Please fill out the form on this section to contact with me
+                    </p>
+        
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <i class='bx bx-envelope fs-5' style='color:#ffffff'></i>
+                        <div class="mb-0 text-white"><a href="mailto:imeldasunario2005@gmail.com">imeldasunario2005@gmail.com</a></div>
+                    </div>
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <i class='bx bxl-instagram fs-5' style='color:#ffffff'></i>
+                        <div class="mb-0 text-white"> <a href="https://www.instagram.com/imeldasnrio/">imeldasnrio</a></div>
+                    </div>
+                </div> 
+                
+                <div class="col-md-5">
+                    <form action="#">
+                        <input type="text" name="name" placeholder="Name" id="name" class="form-control rounded-1 mb-2">
+                        <input type="email" name="email" placeholder="Email" id="email" class="form-control rounded-1 mb-2">
+                        <textarea name="message" id="message" placeholder="Message" cols="30" rows="3" class="form-control rounded-1 mb-3"></textarea>
+                        <button class="btn btn-lgreen w-100 rounded-1">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="py-3 text-center">
+        <div class="container">
+            <p class="text-white fs-7 mb-0">Copyright &copy; 2024 Imelda S. All Right Reserved</p>
+        </div>
+    </footer>
+
+    <!-- bootstrap java -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <!-- typed java -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#typing', {
+          strings: ['Student'],
+          typeSpeed: 150,
+          loop: true,
+        });
+
+        // active
+        const navLink = document.querySelectorAll('.nav-link');
+        navLink.forEach(link => {
+            link.addEventListener('click', function (e) {
+                navLink.forEach(nav => {
+                    nav.classList.remove('active');
+                    nav.removeAttribute('aria-current');
+                });
+
+                this.classList.add('active');
+                this.setAttribute('aria-current', 'page');
+            });
+        });
+    </script>
+</body>
+</html>
